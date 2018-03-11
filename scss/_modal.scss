@@ -1,9 +1,12 @@
 .modal-content{
     border: 0;
+    @include border-radius($border-radius-lg);
+    @include box-shadow($modal-content-box-shadow-xs);
 }
 
 .modal-header{
     padding: $modal-inner-padding $modal-header-padding;
+    border-bottom: $modal-header-border-width solid $modal-header-border-color;
 }
 
 .modal-title{
@@ -17,6 +20,7 @@
 
 .modal-footer{
     background-color: $modal-footer-bg;
+    border-top: $modal-footer-border-width solid $modal-footer-border-color;
 }
 
 // Alternate styles
