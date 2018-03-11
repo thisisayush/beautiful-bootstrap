@@ -744,16 +744,17 @@ $modal-title-line-height:           $line-height-base !default;
 $modal-content-bg:               $white !default;
 $modal-content-border-color:     rgba($black, .2) !default;
 $modal-content-border-width:     $border-width !default;
-$modal-content-box-shadow-xs:    0 .25rem .5rem rgba($black, .5) !default;
-$modal-content-box-shadow-sm-up: 0 .5rem 1rem rgba($black, .5) !default;
+$modal-content-box-shadow-xs:    0 4px 10px 0 rgba($black, .2) !default;
+$modal-content-box-shadow-sm-up: 0 4px 10px 0 rgba($black, .2) !default;
 
 $modal-backdrop-bg:           $black !default;
 $modal-backdrop-opacity:      .5 !default;
-$modal-header-border-color:   $gray-200 !default;
+$modal-header-border-color:   transparent !default;
 $modal-footer-border-color:   $modal-header-border-color !default;
 $modal-header-border-width:   $modal-content-border-width !default;
 $modal-footer-border-width:   $modal-header-border-width !default;
-$modal-header-padding:        1rem !default;
+$modal-header-padding:        1.5rem !default;
+$modal-body-padding:          1.4rem !default;
 
 $modal-lg:                          800px !default;
 $modal-md:                          500px !default;
@@ -761,7 +762,8 @@ $modal-sm:                          300px !default;
 
 $modal-transition:                  transform .3s ease-out !default;
 
-
+$modal-footer-bg:                   $gray-100 !default;
+$modal-border-level:                -5 !default;
 // Alerts
 //
 // Define alert colors, border radius, and padding.

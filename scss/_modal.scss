@@ -1,0 +1,32 @@
+.modal-content{
+    border: 0;
+}
+
+.modal-header{
+    padding: $modal-inner-padding $modal-header-padding;
+}
+
+.modal-title{
+    font-weight: 700;
+}
+
+.modal-body{
+    color: lighten($gray-900, 30%);
+    padding: $modal-inner-padding $modal-body-padding;
+}
+
+.modal-footer{
+    background-color: $modal-footer-bg;
+}
+
+// Alternate styles
+//
+// Generate contextual modifier classes for colorizing the modal
+
+@each $color, $value in $theme-colors {
+    .modal-#{$color} {
+        .modal-content{
+            border-top: 5px solid theme-color-level($color, $modal-border-level);
+        }
+    }
+}

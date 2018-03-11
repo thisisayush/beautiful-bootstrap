@@ -3789,7 +3789,7 @@ button.close {
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.1rem;
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
   outline: 0; }
 
 .modal-backdrop {
@@ -3809,13 +3809,13 @@ button.close {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 1rem;
-  border-bottom: 1px solid #e9ecef;
+  padding: 1.5rem;
+  border-bottom: 1px solid transparent;
   border-top-left-radius: 0.1rem;
   border-top-right-radius: 0.1rem; }
   .modal-header .close {
-    padding: 1rem;
-    margin: -1rem -1rem -1rem auto; }
+    padding: 1.5rem;
+    margin: -1.5rem -1.5rem -1.5rem auto; }
 
 .modal-title {
   margin-bottom: 0;
@@ -3831,7 +3831,7 @@ button.close {
   align-items: center;
   justify-content: flex-end;
   padding: 1rem;
-  border-top: 1px solid #e9ecef; }
+  border-top: 1px solid transparent; }
   .modal-footer > :not(:first-child) {
     margin-left: .25rem; }
   .modal-footer > :not(:last-child) {
@@ -3853,13 +3853,53 @@ button.close {
     min-height: calc(100% - (1.75rem * 2)); }
 
   .modal-content {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2); }
 
   .modal-sm {
     max-width: 300px; } }
 @media (min-width: 992px) {
   .modal-lg {
     max-width: 800px; } }
+.modal-content {
+  border: 0; }
+
+.modal-header {
+  padding: 1rem 1.5rem; }
+
+.modal-title {
+  font-weight: 700; }
+
+.modal-body {
+  color: #65727e;
+  padding: 1rem 1.4rem; }
+
+.modal-footer {
+  background-color: #f8f9fa; }
+
+.modal-primary .modal-content {
+  border-top: 5px solid #66b0ff; }
+
+.modal-secondary .modal-content {
+  border-top: 5px solid #a7acb1; }
+
+.modal-success .modal-content {
+  border-top: 5px solid #7eca8f; }
+
+.modal-info .modal-content {
+  border-top: 5px solid #74c7d4; }
+
+.modal-warning .modal-content {
+  border-top: 5px solid #ffda6a; }
+
+.modal-danger .modal-content {
+  border-top: 5px solid #ea868f; }
+
+.modal-light .modal-content {
+  border-top: 5px solid #fbfbfc; }
+
+.modal-dark .modal-content {
+  border-top: 5px solid #85898c; }
+
 .tooltip {
   position: absolute;
   z-index: 1070;
